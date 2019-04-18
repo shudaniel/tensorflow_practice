@@ -11,12 +11,11 @@ with open("four_blocks.txt",'w') as file:
   for i in range(50,100):
     for j in range(0, 50):
         writer.writerow([0, 0, i, j, 1, 1])
-'''
-  for i in range(0,5):
-    for j in range(5, 10):
+
+  for i in range(0,50):
+    for j in range(50, 100):
         writer.writerow([0, 0, i, j, 2, 2])
 
-  for i in range(5,10):
-    for j in range(5, 10):
+  for i in range(50,100):
+    for j in range(50, 100):
         writer.writerow([0, 0, i, j, 3, 3])
-'''
