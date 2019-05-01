@@ -47,14 +47,14 @@ with open("corner_color.txt",'w') as file:
   writer.writerow(["ts", "user" ,"x_coordinate" ,"y_coordinate" ,"color", "label"])
 
   # Set 5: color 0 on top half, color 1 on bottom half
-  for i in range(0,75):
+  for i in range(0,65):
     for j in range(0, 50):
         writer.writerow([0, 0, i, j, 0, 0])
   for i in range(0,100):
     for j in range(50, 100):
         writer.writerow([0, 0, i, j, 0, 0])
 
-  for i in range(75,100):
+  for i in range(65,100):
     for j in range(0, 50):
         writer.writerow([0, 0, i, j, 1, 1])
 
@@ -125,4 +125,75 @@ with open("block_in_middle.txt",'w') as file:
   for i in range(0,100):
     for j in range(75, 100):
         writer.writerow([0, 0, i, j, 0, 0])
+
+
+  with open("block_in_middle_nocolor.txt",'w') as file:
+    writer = csv.writer(file, delimiter = ",")
+    writer.writerow(["ts", "user" ,"x_coordinate" ,"y_coordinate" ,"color", "label"])
+
+    for i in range(25,75):
+      for j in range(25, 75):
+          writer.writerow([0, 0, i, j, 0, 1])
+
+    for i in range(0,100):
+      for j in range(0, 25):
+          writer.writerow([0, 0, i, j, 0, 0])
+
+    for i in range(0,25):
+      for j in range(25, 75):
+          writer.writerow([0, 0, i, j, 0, 0])
+
+    for i in range(75,100):
+      for j in range(25, 75):
+          writer.writerow([0, 0, i, j, 0, 0])
+
+    for i in range(0,100):
+      for j in range(75, 100):
+          writer.writerow([0, 0, i, j, 0, 0])
+
+
+  with open("block_in_middle_noxy.txt",'w') as file:
+    writer = csv.writer(file, delimiter = ",")
+    writer.writerow(["ts", "user" ,"x_coordinate" ,"y_coordinate" ,"color", "label"])
+
+    for i in range(25,75):
+      for j in range(25, 75):
+          writer.writerow([0, 0, 0, 0, 1, 1])
+
+    for i in range(0,100):
+      for j in range(0, 25):
+          writer.writerow([0, 0, 0, 0, 0, 0])
+
+    for i in range(0,25):
+      for j in range(25, 75):
+          writer.writerow([0, 0, 0, 0, 0, 0])
+
+    for i in range(75,100):
+      for j in range(25, 75):
+          writer.writerow([0, 0, 0, 0, 0, 0])
+
+    for i in range(0,100):
+      for j in range(75, 100):
+          writer.writerow([0, 0, 0, 0, 0, 0])
+
+  with open("block_in_middle_simple.txt",'w') as file:
+    writer = csv.writer(file, delimiter = ",")
+    writer.writerow(["ts", "user" ,"x_coordinate" ,"y_coordinate" ,"color", "label"])
+
+    for i in range(33,66):
+      for j in range(0, 50):
+          writer.writerow([0, 0, i, j, 1, 1])
+
+    for i in range(0,100):
+      for j in range(50, 100):
+          writer.writerow([0, 0, i, j, 0, 0])
+
+    for i in range(0,33):
+      for j in range(0, 50):
+          writer.writerow([0, 0, i, j, 0, 0])
+
+    for i in range(66,100):
+      for j in range(0, 50):
+          writer.writerow([0, 0, i, j, 0, 0])
+
 
